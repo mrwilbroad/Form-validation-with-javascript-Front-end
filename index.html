@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="HTML ,JAVASCRIPT AND BOOTSTRAP-5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    <title>js_validation</title>
+</head>
+<style>
+    label {
+        font-weight: 700;
+    }
+    .btnWave {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        letter-spacing: 3px ;
+        transition:all 1s ease-in-out;
+
+    }
+    .btnWave:hover {
+        color: whitesmoke;
+        transform: scale(1.2) translateX(-20px)  translateY(-10px);
+
+    }
+    .hiddenRegion {
+        visibility: hidden; 
+        margin-top: -60px !important;
+    }
+</style>
+<body>
+
+   
+
+    <div class="container-fluid bg-dark mb-5 fixed-top">
+        <h5 class="text-center   text-white py-3 ">javascript form validation</h5>
+    </div>
+    <div class="container mt-5 border-start border-2 border-info shadow p-3 ">
+        
+        <h5 class="mt-5"><strong>Register all details </strong></h5>
+        <p id="TIME1"></p>
+        <p class="validation text-danger"></p>
+        <hr>
+        <form action="" class="form" onsubmit="validateForm(event)">
+            <div class="child">
+                <label for="" class="form-label">username</label>
+                <input type="text" name="username" class="form-control" placeholder="Enter username">
+            </div>
+            <div class="child">
+                <label for="" class="form-label">Email</label>
+                <input type="text" name="email" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="child">
+                <label for="" class="form-label">Age</label>
+                <input type="text" name="age" class="form-control" placeholder="Enter age">
+            </div>
+
+            <div class="child my-3">
+                <label for="" class="form-label">Gender</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </div>
+
+            <div class="child">
+                <label for="" class="form-label">Mobile</label>
+                <input type="text" name="mobile" class="form-control" placeholder="Enter mobile +255 XXXXXXXXX">
+            </div>
+            <div class="child my-2">
+                <label for="" class="form-label">Choose program name</label>
+                <select name="bachelor" class="form-select">
+                    <option selected disabled value="0">Choose program name</option>
+                    <option name="bachelor" value="bsc-SE">bachelor of science in software engineering</option>
+                    <option name="bachelor" value="bsc-DE">bachelor of science in Digital  engineering</option>
+                    <option name="bachelor" value="bsc-CE">bachelor of science in computer engineering</option>
+                    <option name="bachelor" value="bsc-MTA">bachelor of science in maltimedia engineering</option>
+                    <option name="bachelor" value="bsc-GD">bachelor of science in Graphic and design engineering</option>
+                </select>
+            </div>
+               <div class="child radioBtn">
+                <label for="" class="form-label">Pick your resident</label>
+                <div class="form-check form-switch">
+                    <label for="" class="form-check-label">Dar es salam</label>
+                    <input type="radio" name="region" value="Dar es salam"  class="form-check-input">
+                </div>
+                <div class="form-check form-switch">
+                    <label for="" class="form-check-label">Mwanza</label>
+                    <input type="radio" name="region" value="Mwanza" class="form-check-input">
+                </div>
+                <div class="form-check form-switch">
+                    <label for="" class="form-check-label">Kigoma</label>
+                    <input type="radio" name="region" value="Kigoma" class="form-check-input">
+                </div>
+                <div class="form-check form-switch">
+                    <label for="" class="form-check-label">Others</label>
+                    <input type="radio"  name="region" value="others" class="othrtbn form-check-input">
+                </div>
+                <!-- onclick="OtherRegion()" -->
+                <div class="child hiddenRegion my-2">
+                    <label for="" class="form-label">Other region</label>
+                    <input type="text" class="form-control" placeholder="Enter your region" name="otherRegion">
+                </div>
+                
+                </div>
+            
+            <div class="child">
+                <label for="" class="form-label">Choose multiple course to represent</label>
+                <div class="d-sm-flex justify-content-evenly w-25">
+                    <div class="form-check">
+                        <label for="" class="form-check-label">CP 221</label>
+                        <input type="checkbox" name="course" class="form-check-input" value="CP 221">
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">CS 341</label>
+                        <input type="checkbox" name="course" class="form-check-input" value="CS 341">
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-evenly w-25">
+                    <div class="form-check">
+                        <label for="" class="form-check-label">IS 987</label>
+                        <input type="checkbox" name="course" class="form-check-input" value="IS 987">
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">CP 556</label>
+                        <input type="checkbox" name="course" class="form-check-input" value="CP 556">
+                    </div>
+                </div>
+            </div>
+            <div class="child mx-auto mt-5">
+                <input type="submit" name="submit" class="btn btn-outline-success">
+                <input type="reset" name="reset" class="btn btn-outline-danger">
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <button  type="button" class="btn btn-outline-success px-5 btnWave  text-dark">mrwilbroad</button>
+
+    
+
+
+
+    <script src="./Bootstrap/js/bootstrap.js"></script>
+    <script src="./Bootstrap/js/index.js"></script>
+   
+    
+    
+</body>
+</html>

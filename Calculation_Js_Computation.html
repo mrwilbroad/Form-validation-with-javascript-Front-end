@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+    <title>Jquery</title>
+</head>
+<body>
+    <h5>JS calculation</h5>
+    
+    <form action="" onsubmit="val(event)">
+        
+        <input type="text" placeholder="First number" name="fnumber">
+        <input type="text" placeholder="second number" name="snumber">
+        <select name="operator">
+            <option value="0" selected disabled>Choose operator</option>
+            <option value="addition">addition</option>
+            <option value="multiplicaton">multiplicaton</option>
+            <option value="division">division</option>
+            <option value="substraction">substraction</option>
+        </select>
+        <input type="submit" value="calculate">
+        <button class="btn btn-success text-white Answer" disabled>Answer</button>
+    </form>
+
+
+    <button class="background btn btn-primary mt-5" onclick="changebackgrund()">Change background color</button>
+
+    <script src="./Bootstrap/js/calculation.js"></script>
+</body>
+</html>
